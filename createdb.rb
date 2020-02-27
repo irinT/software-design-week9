@@ -14,7 +14,7 @@ end
 DB.create_table! :rsvps do
   primary_key :id
   foreign_key :event_id
-  Boolean :going
+  Boolean :going #return 0 1 false or true (default=false)
   String :name
   String :email
   String :comments, text: true
